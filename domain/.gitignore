@@ -75,3 +75,6 @@ build/
 
 lib/src/di/locator.config.dart
 lib/src/common/network_exceptions.freezed.dart
+
+# FVM Version Cache
+.fvm/

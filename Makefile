@@ -58,38 +58,38 @@ install: install_core install_domain install_data install_presentation ## Instal
 
 build_core: install_core
 	@echo "╠ Build core module dependencies..."
-	@cd ./core && flutter packages pub run build_runner build --delete-conflicting-outputs
+	@cd ./core && dart pub run build_runner build --delete-conflicting-outputs
 
 build_domain: install_domain
 	@echo "╠ Build domain module dependencies..."
-	@cd domain && flutter packages pub run build_runner build --delete-conflicting-outputs
+	@cd domain && dart pub run build_runner build --delete-conflicting-outputs
 
 build_data: install_data
 	@echo "╠ Build data module dependencies..."
-	@cd data && flutter packages pub run build_runner build --delete-conflicting-outputs
+	@cd data && dart pub run build_runner build --delete-conflicting-outputs
 
 build_presentation: install_presentation
 	@echo "╠ Build presentation module dependencies..."
-	@cd presentation && flutter packages pub run build_runner build --delete-conflicting-outputs
+	@cd presentation && dart pub run build_runner build --delete-conflicting-outputs
 
 build_deps: build_core build_domain build_data build_presentation ## Installs and builds the dependencies
 	@echo "╠ Build app dependencies..."
 
 clean_build_core: clean_core
 	@echo "╠ Build core module dependencies..."
-	@cd ./core && flutter packages pub run build_runner build --delete-conflicting-outputs
+	@cd ./core && dart pub run build_runner build --delete-conflicting-outputs
 
 clean_build_domain: clean_domain
 	@echo "╠ Build domain module dependencies..."
-	@cd domain && flutter packages pub run build_runner build --delete-conflicting-outputs
+	@cd domain && dart pub run build_runner build --delete-conflicting-outputs
 
 clean_build_data: clean_data
 	@echo "╠ Build data module dependencies..."
-	@cd data && flutter packages pub run build_runner build --delete-conflicting-outputs
+	@cd data && dart pub run build_runner build --delete-conflicting-outputs
 
 clean_build_presentation: clean_presentation
 	@echo "╠ Build presentation module dependencies..."
-	@cd presentation && flutter packages pub run build_runner build --delete-conflicting-outputs
+	@cd presentation && dart pub run build_runner build --delete-conflicting-outputs
 
 clean_build_deps: clean_build_core clean_build_domain clean_build_data clean_build_presentation ## Cleans, installs and builds dependencies
 	@echo "╠ Build app dependencies..."

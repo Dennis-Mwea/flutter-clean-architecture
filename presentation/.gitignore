@@ -75,3 +75,6 @@ build/
 
 lib/src/di/locator.config.dart
 lib/src/common/routes/router.gr.dart
+
+# FVM Version Cache
+.fvm/

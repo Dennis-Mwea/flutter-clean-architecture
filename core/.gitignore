@@ -74,3 +74,6 @@ build/
 !**/ios/**/default.perspectivev3
 
 lib/src/di/locator.config.dart
+
+# FVM Version Cache
+.fvm/
